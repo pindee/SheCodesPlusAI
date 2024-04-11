@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="src/style.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <title>EmmasWorldClock</title>
+  </head>
+  <body>
+    <div id="AIchatbot">
+      <header></header>
+      <h1>Ask Arty</h1>
+      <h2>Artificial Intelligence Chatbot</h2>
+      <form id="Chatbot">
+        <label for="prompt" id="AskQuestion"
+          >What is your question?</label>
+        <input class="textInput" id="prompt" type="text" required></input>
+        <input id="AskBtn" type="submit" value="Ask"></input>
+      </form>
+      <div id="answers" class="answers">
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <p>
+      This
+      <a href="https://www.shecodes.io/" target="blank">She Codes</a>
+      project was coded by Emma Pindera and is open-sourced on
+      <a href="https://github.com/pindee/SheCodesPlusAddOn" target="blank">
+        GitHub</a
+      >
+      and hosted on
+      <a href="https://main--pinderaworldclock.netlify.app/" target="blank"
+        >Netlifly</a
+      >.
+    </p>
+    <img id="EmmaLogo" src="img/EPLogo.png" />
+  </footer>
+  <script src="src/javascript.js"></script>
+</html>
