@@ -12,19 +12,21 @@
   </head>
   <body>
     <div id="AIchatbot">
-      <header></header>
-      <h1>Ask Arty</h1>
+      <header> <h1>Ask Arty</h1>
       <h2>Artificial Intelligence Chatbot</h2>
+     </header>
+     <main>
       <form id="Chatbot">
         <label for="prompt" id="AskQuestion"
           >What is your question?</label>
-        <input class="textInput" id="prompt" type="text" required></input>
+        <input class="textInput" autofocus autocomplete="off" placeholder="Enter your question"  id="prompt" type="text" required></input>
         <input id="AskBtn" type="submit" value="Ask"></input>
       </form>
-      <div id="answers" class="answers">
+      <div id="answers">
         </div>
       </div>
     </div>
+    </main>
   </body>
   <footer>
     <p>
