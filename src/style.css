@@ -137,9 +137,17 @@ label {
   cursor: text;
 }
 
-#answers.answered {
+#answers {
   background-color: #e8f0fe;
-  border-radius: 10px;
+  border-left: 10px solid #05576f;
+  border-radius: 2px;
   margin-top: 18px;
   text-align: right;
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 10px;
+  width: 510px;
 }
