@@ -1,10 +1,12 @@
 function showAnswer(response) {
   let answer = response.data.answer;
   let answerElement = document.querySelector("#answers");
+  answerElement.classList.add("complete");
   answerElement.innerHTML = answer;
 }
 
-function aiAsk() {
+function aiAsk(event) {
+  event.preventDefault();
   let apiKey = "1abte8c00a79ddf038b756348o47c6af";
   let context = "be professional, and provide a short answer. 1-3 sentences.";
   let prompt = document.getElementById("prompt").value;
@@ -23,3 +25,6 @@ const form = document.querySelector("form");
 const submitButton = document.querySelector("#AskBtn");
 
 submitButton.addEventListener("click", aiAsk);
+
+let formElement = document.querySelector("#Chatbot");
+formElement.addEventListener("submit", aiAsk);
