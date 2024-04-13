@@ -1,7 +1,7 @@
 function showAnswer(response) {
   let answer = response.data.answer;
   let answerElement = document.querySelector("#answers");
-  answerElement.classList.add("complete");
+  answerElement.style.display = "block";
   answerElement.innerHTML = answer;
 }
 
